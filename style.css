@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+    .commentinput{
+        width: 50%;
+    }
+}
+.navbg{
+    background-color:#080E2E ;
+}
+.homePageSec{
+    background-color:#080E2E ;
+}
+.servicesSec{
+    background-color:#080E2E ;
+}
+.leadp{
+    width: 35%;
+}
+
+.progress{
+    background-color: rgb(241, 165, 165);
+
+}
+.progress-bar{
+    background:linear-gradient(to left, red, blue);
+}
+.navbar .navbar-nav .nav-item{
+   position: relative;
+}
+.navbar .navbar-nav .nav-item::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 0%;
+    height: 4px;
+    margin: 0 auto;
+    transition: all .5s;
+ }
+ .navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+    color: white;
+ }

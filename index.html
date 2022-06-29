@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark navbg">
+    <nav class="navbar navbar-expand-md navbar-dark navbg fixed-top shadow">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="images/my-logo.png" alt="logo" width="75px"
@@ -61,30 +61,33 @@
   
 
     <section
-      class="homePageSec text-light text-center p-5 text-sm-start"
+      class="homePageSec text-light text-center text-md-start p-5"
       id="section1"
     >
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div class="text-justify leadp d-sm-block">
-            <h1>I am <span class="text-warning">Front-end</span></h1>
-            <h1>Developer</h1>
-            <p class="lead my-3">
-              My name is <strong>Muhammed Berisso</strong>, dolor sit amet consectetur adipisicing elit.
-              voluptatem, repellendus deleniti amet a, et,
-              voluptatibus aperiam dolorum eligendi modi praesentium doloribus
-              similique voluptas earum. Quasi!
-            </p>
-            <button class="btn btn-outline-primary btn-lg">
-              Download CV
-            </button>
-          </div>
-          <img
-            class="img-responsive img-thumbnail d-none d-sm-block"
-            src="images/mame-3x4.JPG"
-            alt="homeimage"
-            width="300"
-          />
+        <div class="row align-items-center justify-content-between g-4 flex-column-reverse flex-md-row pt-5">
+          <div class="col-md">
+              <h1>I am <span class="text-warning">Front-end</span></h1>
+              <h1>Developer</h1>
+              <p class="lead mt-3 mb-4">
+                My name is <strong>Muhammed Berisso</strong>, dolor sit amet consectetur adipisicing elit.
+                voluptatem, repellendus deleniti amet a, et,
+                voluptatibus aperiam dolorum eligendi modi praesentium doloribus
+                similique voluptas earum. Quasi!
+              </p>
+              <button class="btn btn-outline-primary btn-lg">
+                Download CV
+              </button>
+            </div>
+            <div class="col-md text-md-end text-center">
+              <img
+              class="img-responsive img-thumbnail"
+              src="images/mame-3x4.JPG"
+              alt="homeimage"
+              width="350"
+              />
+            </div>    
+        
         </div>
       </div>
     </section>
@@ -92,7 +95,8 @@
 
     <section class="p-4 bg-dark text-light">
       <div class="container">
-        <a href="#" class="nav-link mb-3"
+        <a href="#" class="nav-link mb-3
+        "
         ><i class="bi bi-dash-lg"></i>About Me</a
       >
         <div class="row align-items-center justify-content-between">

@@ -13,6 +13,9 @@
 .servicesSec{
     background-color:#080E2E ;
 }
+.footer{
+    background-color:#080E2E ;
+}
 .leadp{
     width: 50%;
 }
@@ -42,4 +45,7 @@
  .navbar .navbar-nav .nav-item:hover::after{
     width: 100%;
     color: white;
+ }
+ .learn-fun{
+
  }

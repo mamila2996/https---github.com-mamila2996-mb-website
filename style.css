@@ -1,51 +1,123 @@
+* {
+  box-sizing: border-box;
+}
 @media (min-width: 768px) {
-    .commentinput{
-        width: 50%;
-    }
-}
-
-.navbg{
-    background-color:#080E2E ;
-}
-.homePageSec{
-    background-color:#080E2E ;
-}
-.servicesSec{
-    background-color:#080E2E ;
-}
-.footer{
-    background-color:#080E2E ;
-}
-.leadp{
+  .commentinput {
     width: 50%;
+  }
 }
 
-.progress{
-    background-color: rgb(241, 165, 165);
+.navbg {
+  background-color: #080e2e;
+}
+.homePageSec {
+  background-color: #080e2e;
+  color: white;
+}
 
+.homePageSec .profile-image:hover{
+  width: 380px;
+  transition: all .5s ease;
+  cursor: pointer;
 }
-.progress-bar{
-    background:linear-gradient(to left, red, blue);
+.first-section{
+  background-color: #212529;
+  color: white;
 }
-.navbar .navbar-nav .nav-item{
-   position: relative;
+.second-section{
+  background-color: #212529;
+  color: white;
 }
-.navbar .navbar-nav .nav-item::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    right: 0;
+.third-section{
+  background-color: #212529;
+  color: white;
+}
+.servicesSec {
+  background-color: #080e2e;
+  color: white;
+}
+.footer {
+  background-color: #080e2e;
+  color: white;
+}
+.leadp {
+  width: 50%;
+}
+
+.progress {
+  background-color: rgb(241, 165, 165);
+}
+.progress-bar {
+  background: linear-gradient(to left, red, blue);
+}
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 0%;
+  height: 4px;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+  color: white;
+}
+.learn-fun {
+}
+/* darkmode */
+body {
+  margin: 0;
+  transition: 0.2s linear;
+}
+body.dark section{
     background-color: white;
-    width: 0%;
-    height: 4px;
-    margin: 0 auto;
-    transition: all .5s;
- }
- .navbar .navbar-nav .nav-item:hover::after{
-    width: 100%;
-    color: white;
- }
- .learn-fun{
+    color: #111;
+}
 
- }
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+
+.label {
+  position: relative;
+  width: 50px;
+  height: 27px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid azure;
+}
+.ball {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: azure;
+  transition: transform .2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(23px);
+}
+
+.bi-sun {
+  color: #f39c12;
+}
+.bi-moon {
+  color: #f1c40f;
+}

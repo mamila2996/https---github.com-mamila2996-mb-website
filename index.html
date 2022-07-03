@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <nav class="navbar navbar-expand-md navbar-dark navbg fixed-top shadow">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="images/my-logo.png" alt="logo" width="75px"
         /></a>
-
         <button
           class="navbar-toggler"
           type="button"
@@ -51,29 +51,37 @@
             <li class="nav-item">
               <a class="nav-link d-none d-md-block" href="https://github.com/mamila2996"><i class="bi bi-github"></i></a>
             </li>
-            <li class="nav-item ms-4">
-              <a class="nav-link btn btn-outline-primary btn-sm px-4 d-none d-md-block" href="#">Hire Me</a>
+            <li class="nav-item ms-3 me-4">
+              <a class="nav-link btn btn-outline-primary btn-sm px-4 d-none d-md-block" href="mailto:muhammedb8826@gmail.com">Hire Me</a>
             </li>
+            <div class="darkmode">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="bi bi-moon"></i>
+                <i class="bi bi-sun"></i>
+                <div class="ball"></div>
+              </label>
+              </div>
           </ul>
         </div>
+       
+
       </div>
     </nav>
-  
+    
 
     <section
-      class="homePageSec text-light text-center text-md-start p-5"
+      class="homePageSec text-center text-md-start p-5"
       id="section1"
     >
       <div class="container">
         <div class="row align-items-center justify-content-between g-4 flex-column-reverse flex-md-row pt-5">
           <div class="col-md">
-              <h1>I am <span class="text-warning">Front-end</span></h1>
-              <h1>Web Developer</h1>
-              <p class="lead mt-3 mb-4">
-                My name is <strong>Muhammed Berisso</strong>, dolor sit amet consectetur adipisicing elit.
-                voluptatem, repellendus deleniti amet a, et,
-                voluptatibus aperiam dolorum eligendi modi praesentium doloribus
-                similique voluptas earum. Quasi!
+              <h1>I am<span class="text-warning mx-2">Muhammed</span>Berisso</h1>
+              <!-- <h1>Web Developer</h1> -->
+              <p class="lead mt-3 mb-4 fw-normal">
+                This is my official potfolio website to showcase my all works 
+                related to web development and UI design
               </p>
               <a href="downloads/Muhammed Berisso - Resume .pdf" download=""><button class="btn btn-outline-primary btn-lg">
                 Download CV
@@ -81,7 +89,7 @@
             </div>
             <div class="col-md text-md-end text-center">
               <img
-              class="img-responsive img-thumbnail"
+              class="img-responsive img-thumbnail profile-image"
               src="images/mame-3x4.JPG"
               alt="homeimage"
               width="350"
@@ -93,7 +101,7 @@
     </section>
 
 
-    <section class="p-4 bg-dark text-light">
+    <section class="first-section p-4">
       <div class="container">
         <a href="#" class="nav-link mb-3
         "
@@ -156,9 +164,9 @@
             <a href="downloads/Muhammed Berisso - Resume .pdf" download=""><button class="btn btn-outline-primary btn-lg mt-3">
               Download CV
             </button></a>
-            <button class="btn btn-primary btn-lg ms-2 mt-3">
+            <a href="mailto:muhammedb8826@gmail.com"><button class="btn btn-primary btn-lg ms-2 mt-3">
               Hire me
-            </button>
+            </button></a>
             <!-- <a href="#" class="btn btn-light mt-3"
               ><i class="bi bi-chevron-right"></i>Read More</a
             > -->
@@ -243,7 +251,7 @@
     </section>
 
 
-    <section class="p-5 bg-dark text-light">
+    <section class="second-section p-5">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
@@ -265,7 +273,7 @@
       </div>
     </section>
 
-    <section class="p-5 bg-dark text-light">
+    <section class="third-section p-5">
       <div class="container">
         <div class="row align-items-center justify-content-between flex-column-reverse flex-md-row">
           <div class="col-md p-5">
@@ -289,11 +297,11 @@
 
 
 
-  <section class="footer text-light text-center p-5">
+  <section class="footer text-center p-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 border"><h1>Let's Talk</h1></div>
-        <div class="col-12 col-sm-6 border"><h1>Let Me Know Here</h1></div>
+        <div class="col-6  border"><h1>Let's Talk</h1></div>
+        <div class="col-6  border"><h1>Let Me Know Here</h1></div>
       </div>
     </div>
 
@@ -321,6 +329,12 @@
       //     sec1.classList.add("bg-light","text-secondary");
 
       // });
+
+      const checkbox = document.getElementById("checkbox");
+      //const section = document.getElementById("section1");
+      checkbox.addEventListener("change", function(){
+      document.body.classList.toggle("dark")
+      });
     </script>
   </body>
 </html>

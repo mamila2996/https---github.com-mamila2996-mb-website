@@ -69,19 +69,30 @@
   width: 100%;
   color: white;
 }
-.learn-fun {
-}
+
 /* darkmode */
 body {
   margin: 0;
-  transition: 0.2s linear;
+  transition: .2s ease;
 }
 body.dark section{
     background-color: white;
-    color: #111;
+    color: black;
+}
+body.dark .navbg{
+background-color: white;
+}
+body.dark .navbg .navbar-nav .nav-item .nav-link{
+  color: black
+
 }
 
-
+.navbar .navbar-nav .nav-item::after {
+  background-color: black; 
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  color: black;
+}
 
 .checkbox {
   opacity: 0;

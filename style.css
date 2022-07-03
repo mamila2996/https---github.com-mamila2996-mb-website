@@ -82,6 +82,10 @@ body.dark section{
 body.dark .navbg{
 background-color: white;
 }
+body.dark .navbg .navbar-toggler{
+  color: black;
+  }
+
 body.dark .navbg .navbar-nav .nav-item .nav-link{
   color: black
 

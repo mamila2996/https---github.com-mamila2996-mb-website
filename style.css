@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
-  .commentinput {
-    width: 50%;
-  }
-}
+
 
 .navbg {
   background-color: #080e2e;
@@ -170,35 +166,158 @@ color: white;
 font-size: 25px;
 }
 #fnForm{
-  width: 370px;
-  height: 60px;
-  position: relative;
+position: relative;
+width: 75%;
+height: 50px;
 }
 #fnForm input{
+  
   width: 100%;
   height: 100%;
   font-size: 20px;
   color: white;
   outline: none;
+  box-sizing: border-box;
+  box-shadow: none;
   background: transparent;
+  border: none;
   border: 2px solid #2ecc71;
   border-radius: 10px;
+  padding: 10px 0;
+  
 }
-#fnForm label{
-  position: absolute;
+body.dark #fnForm input{
+  color:black;
+ 
+}
+.form{
+  width: 50%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  border-top: 1px solid #595f6e;
+  border-left: 1px solid #595f6e;
+  border-right: 1px solid #595f6e;
+}
+.formt{
+  width: 50%;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  border-top: 1px solid #595f6e;
+  border-left: 1px solid #595f6e;
+  border-right: 1px solid #595f6e;
+}
+.forms{
+  width: 50%;
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #595f6e; 
   font-size: 18px;
-  top: 15px;
-  left: 15px;
-  transition: .3s ease;
-}
-#fnForm input:focus ~ label{
-  top: -14px;
-  background-color: #080e2e;
-  font-size: 15px;
-}
-body.dark #fnForm input:focus ~ label{
-  background-color: white;
-  color: black;
+  padding-top: 20px;
+  background: none;
+  outline: none;
 }
 
+.formt input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #595f6e; 
+  font-size: 18px;
+  padding-top: 20px;
+  background: none;
+  outline: none;
+}
+.forms input[type="file"]{
+ display: none;
+}
+.form label{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+}
+.formt label{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+}
+.forms label{
+  color: #5fa8d3;
+  font-size: 14px;
+}
+.form label::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 5px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.formt label::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 5px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.content-name{
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name{
+  transform: translateY(-150%);
+  font-size: 13px;
+  color: #5fa8d3;
+}
+.formt input:focus + .label-name .content-name,
+.formt input:valid + .label-name .content-name{
+  transform: translateY(-400%);
+  font-size: 13px;
+  color: #5fa8d3;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+  transform: translateX(0%);
+}
+.formt input:focus + .label-name::after,
+.formt input:valid + .label-name::after{
+  transform: translateX(0%);
+}
+.copyright{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@media (min-width: 768px) {
+  .commentinput {
+    width: 50%;
+  }
+}

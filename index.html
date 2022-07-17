@@ -44,35 +44,35 @@
             <li class="nav-item">
               <a
                 class="nav-link d-none d-md-block"
-                href="https://www.facebook.com/profile.php?id=100073411668330"
+                href="https://www.facebook.com/profile.php?id=100073411668330" target="_blank"
                 ><i class="bi bi-facebook"></i
               ></a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link d-none d-md-block"
-                href="https://www.linkedin.com/in/muhammed-berisso-a60783226/"
+                href="https://www.linkedin.com/in/muhammed-berisso-a60783226/" target="_blank"
                 ><i class="bi bi-linkedin"></i
               ></a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link d-none d-md-block"
-                href="https://t.me/muhammedb8826"
+                href="https://t.me/muhammedb8826" target="_blank"
                 ><i class="bi bi-telegram"></i
               ></a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link d-none d-md-block"
-                href="https://github.com/mamila2996"
+                href="https://github.com/mamila2996" target="_blank"
                 ><i class="bi bi-github"></i
               ></a>
             </li>
             <li class="nav-item ms-3 me-4">
               <a
                 class="nav-link btn btn-outline-primary btn-sm px-4 d-none d-md-block"
-                href="mailto:muhammedb8826@gmail.com"
+                href="mailto:muhammedb8826@gmail.com" target="_blank"
                 >Hire Me</a
               >
             </li>
@@ -346,42 +346,57 @@
     <section class="footer p-5">
       <div class="container">
         <div class="row d-flex justify-content-between">
-          <div class="col-6">
-            <h1 class="m-5">Let's Talk</h1>
-            <h4 class="mt-5">muhammedb8826@gmail.com</h4>
+          <div class="col-12 col-sm-12 col-md-6 mb-5 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="mb-5">Let's Talk</h1>
+            <h4 class="mt-5 pt-5"><span>mbinfo8826@gmail.com</span></h4>
             <h4 class="mt-4 mb-5">whatsapp: +251905078826</h4>
-            <h4 class="mt-5">
-              Follow me<span class="ms-4">
-                <i class="bi bi-linkedin me-2"></i>
-                <i class="bi bi-facebook me-2"></i>
-                <i class="bi bi-instagram me-2"></i>
-                <i class="bi bi-telegram me-2"></i>
+            <div class="d-block d-sm-flex justify-content-between align-items-center mt-5">
+            <h4 class="m-2">Follow me</h4>
+              
+              <span class="m-2">
+                <a href="https://www.linkedin.com/in/muhammed-berisso-a60783226/" target="_blank" class="btn btn-primary btn-sm"><i class="bi bi-linkedin "></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073411668330" target="_blank" class="btn btn-primary btn-sm"><i class="bi bi-facebook "></i></a>
+                <a href="https://www.instagram.com/mamila2996/" target="_blank" class="btn btn-primary btn-sm"><i class="bi bi-instagram "></i></a>
+                <a href="https://t.me/muhammedb8826" target="_blank" class="btn btn-primary btn-sm"><i class="bi bi-telegram "></i></a>
               </span>
-            </h4>
           </div>
-          <div class="col-6">
-            <h1 class="m-5">Let Me Know Here</h1>
-            <div class="ms-5 mb-4 form" id="fnForm">
-              <input
-                type="text"
-                name=""
-                id="fullName"
-              />
-              <label for="fullName">Enter your full name</label>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="mb-5">Let Me Know Here</h1>
+            <div class="form">
+              <input type="text" name="name" autocomplete="off"/>
+              <label for="name" class="label-name">
+                <span class="content-name">Your full name</span>
+              </label>
             </div>
-            <div class="ms-5 mb-4 form" id="fnForm">
-              <input
-                type="email"
-                name=""
-                id="email"
-              />
-              <label for="email">Enter your email</label>
+            <div class="form mt-5">
+              <input type="text" name="name" autocomplete="off"/>
+              <label for="name" class="label-name">
+                <span class="content-name">Your email</span>
+              </label>
             </div>
-            <div></div>
+            <div class="formt mt-5">
+              <input type="textarea" name="name" autocomplete="off"/>
+              <label for="name" class="label-name">
+                <span class="content-name">Your message</span>
+              </label>
+            </div>
+            <div class="forms mt-5 d-block d-sm-flex">
+              <input type="file" name="file-load" id="file-load">
+              <label for="file-load"><span><i class="bi bi-paperclip">Attach File</i></span></label>
+              <button class="btn btn-outline-primary m-2">send</button>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
+
+    <!-- <section>
+      <div  class="copyright bg-dark">
+        <span class="text-light">Copyright</span>
+      </div>
+    </section> -->
 
     <!-- <section class="bg-primary text-light p-5">
       <div class="container">
@@ -412,8 +427,8 @@
 
       function scrollFunction() {
         if (
-          document.body.scrollTop > 500 ||
-          document.documentElement.scrollTop > 500
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
         ) {
           toTopButton.style.display = "block";
         } else {
@@ -425,6 +440,18 @@
       function gotoTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+      }
+
+      // match media or media queries
+      document.addEventListener("DOMContentLoaded", init);
+      function init(){
+      let query = window.matchMedia("(max-width: 601px)");
+      if(query.matches){
+        toTopButton.style.display = "block";
+      }
+      else{
+        toTopButton.style.display = "none";
+      }
       }
 
       const checkbox = document.getElementById("checkbox");

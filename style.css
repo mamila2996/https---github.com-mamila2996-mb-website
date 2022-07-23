@@ -19,6 +19,9 @@
 }
 .img-animation{
  position: relative;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
   
 } 
 
@@ -27,33 +30,42 @@
  border: 5px solid transparent;
  border-radius: 50%;
  border-top: 7px solid #FDDA02;
+ border-left: 7px solid #FDDA02;
  border-bottom: 7px solid #00ECFF;
- height: 100%;
- width: 100%;
+ border-right: 7px solid #00ECFF;
+ top: 6%;
+ left: 12%; 
+ transform: translateX(-50%);
+ height: 90%;
+ width: 75%;
  display: flex;
  justify-content: center;
  align-items: center; 
  animation: animate 4s linear infinite; 
 
-  /* animation: animate 4s linear infinite;   */
 }
 
 @keyframes animate{
   0%{
     transform: rotate(0deg);
   }
-  25%{
-    transform: rotate(5deg);
+  /* 25%{
+    transform: rotate(10deg);
   } 
   50%{
     transform: rotate(0deg);
-  } 
+  }
+  75%{
+    transform: rotate(-10deg);
+  } */
   100%{
-    transform: rotate(-5deg);
+    transform: rotate(360deg);
   } 
 }
 
 .img-animation .profile-image{
+  margin: 0;
+  padding: 0;
 position: relative;
 border-radius: 50%;
 border: 7px solid transparent;

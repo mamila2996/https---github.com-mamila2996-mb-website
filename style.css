@@ -19,19 +19,22 @@
 }
 .img-animation{
  position: relative;
+  
+} 
+
+.img-animation .animation-container{
+ position: absolute;  
  border: 5px solid transparent;
  border-radius: 50%;
  border-top: 7px solid #FDDA02;
  border-bottom: 7px solid #00ECFF;
+ height: 100%;
+ width: 100%;
  display: flex;
  justify-content: center;
- align-items: center;
- animation: animate 4s linear infinite;  
-} 
+ align-items: center; 
+ animation: animate 4s linear infinite; 
 
-
-.img-animation .animation-container{
-  position: relative;  
   /* animation: animate 4s linear infinite;   */
 }
 
@@ -59,8 +62,8 @@ border-right: 7px solid #A244D0;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 450px;
-width: 80%;
+height: 100%;
+width: 100%;
 /* animation: animate1 4s linear infinite;  */
 }
 

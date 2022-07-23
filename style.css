@@ -12,12 +12,69 @@
   background-color: #080e2e;
   color: white;
 }
-
-.homePageSec .profile-image:hover{
-  width: 380px;
-  transition: all .5s ease;
-  cursor: pointer;
+.homePageSec .container .row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.img-animation{
+ position: relative;
+ border: 5px solid transparent;
+ border-radius: 50%;
+ border-top: 7px solid #FDDA02;
+ border-bottom: 7px solid #00ECFF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ animation: animate 4s linear infinite;  
+} 
+
+
+.img-animation .animation-container{
+  position: relative;  
+  /* animation: animate 4s linear infinite;   */
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(5deg);
+  } 
+  50%{
+    transform: rotate(0deg);
+  } 
+  100%{
+    transform: rotate(-5deg);
+  } 
+}
+
+.img-animation .profile-image{
+position: relative;
+border-radius: 50%;
+border: 7px solid transparent;
+border-left: 7px solid #A244D0;
+border-right: 7px solid #A244D0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 450px;
+width: 80%;
+/* animation: animate1 4s linear infinite;  */
+}
+
+
+.img-animation .profile-image img{
+  /* object-fit: contain; */
+  width: 55%;
+}
+.img-animation .profile-image img:hover{
+ width: 60%;
+ transition: all 0.3s ease-in-out;
+}
+
+
 .first-section{
   background-color: #212529;
   color: white;
@@ -104,7 +161,6 @@ body.dark .navbar .navbar-nav .nav-item::after {
   position: absolute;
 }
 
-
 .label {
   position: relative;
   width: 50px;
@@ -144,7 +200,6 @@ body.dark .navbar .navbar-nav .nav-item::after {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,6 +348,8 @@ font-size: 25px;
   justify-content: center;
   align-items: center;
 }
+
+
 
 @media (min-width: 768px) {
   .commentinput {
